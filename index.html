@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width = device-width">
+
+        <title>Editor de Código</title>
+
+        <link rel="stylesheet"; href="reset.css">
+        <link rel="stylesheet"; href="style.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <header>
+            <div class="caixa";>
+                <div class="logo">
+                    <img src="logo.png"; alt="AluraDev"; class="logo">
+                </div>
+                <div class="buscar">
+                    <label for="pesquisar"></label>
+                    <input type="search"; class="buscar"; id="pesquisar" 
+                    placeholder="Busque por algo">
+                </div>
+                <div class="perfil">
+                    <div class="foto_de_perfil"></div>
+                    <h2>Harry</h2>
+                </div>
+            </div>
+        </header>
+        <main>
+            <ul class="menu_navegacao">
+                <h2 class="titulo_menu">MENU</h2>
+                <li>
+                    <a href="index.html">
+                        <div class="icone_editar_codigo">
+                            <img src="icone_editar_codigo.png" alt="icon">
+                        </div>
+                        <h2>Editor de Codigo</h2>
+                    </a>
+                    <a href="comunidade.html">
+                        <div class="icone_comunidade">
+                            <img src="icon_comunidade.png" alt="icon">
+                        </div>
+                        <h2>Comunidade</h2>
+                    </a>
+                </li>
+            </ul>
+            <div class="editor_de_codigo">
+                <label for="editor"></label>
+                <textarea id="editor" name="editor" class="editor" ></textarea>
+                <div class="mac_bottons">
+                    <div class="vermelho"></div>
+                    <div class="amarelo"></div>
+                    <div class="verde"></div>
+                </div>
+            </div>
+            <label for="highlight"></label>
+            <input type="submit" name="highlight" id="highlight" class="highlight" 
+            value="Visualizar com o Highlight">
+            <form class="menu_direito">
+                <h2 class="titulo_menu">SEU PROJETO</h2>
+                <label for="nome_projeto"></label>
+                <input type="text" id="nome_projeto" placeholder="Nome do seu projeto" class="nome_projeto">
+                <label for="descricao"></label>
+                <textarea type="text" id="descicao" placeholder="Descrição do seu projeto" 
+                class="descricao_projeto"></textarea>
+                <h2 class="titulo_menu">PERSONALIZAÇÃO</h2>
+                <fieldset>
+                    <select class="linguagem">
+                        <option value="js">Javascript</option>
+                        <option value="py">Python</option>
+                    </select>
+                    <label for="cor_de_fundo"></label>
+                    <input type="color" value="#6BD1FF" id="cor_de_fundo" name="cor_de_fundo" 
+                    class="cor_de_fundo">
+                </fieldset>
+                <label for="salvar"></label>
+                <input type="submit" name="salvar" id="salvar" class="salvar" value="Salvar projeto">
+            </form>
+        </main>
+    </body>
+</html>
